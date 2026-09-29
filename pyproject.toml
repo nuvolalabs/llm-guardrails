@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-guardrails"
+version = "1.0.0"
+description = "Dependency-free AI security & governance: prompt-injection detection, PII redaction, policy engine, hash-chained audit log."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arun Sreedhar" }]
+keywords = ["ai-security", "guardrails", "prompt-injection", "pii", "governance", "responsible-ai", "llm"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
